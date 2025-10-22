@@ -1,0 +1,31 @@
+div {
+    
+    background-color: aliceblue;
+    border-radius:10px;
+    border:2px solid rgb(140, 140, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 500px;
+    margin-left: 500px;
+    
+    
+    
+
+}
+button{
+    background-color: red;
+    color: #ffff;
+    border-radius: 7px;
+    height: 40px;
+    margin-left: 10px;
+    
+}
+.curtir{
+    background-color: blue;
+    border-radius: 7px;
+    
+}
+h2{
+    color: rgb(140, 140, 255);
+    font-size: 29px;
+}

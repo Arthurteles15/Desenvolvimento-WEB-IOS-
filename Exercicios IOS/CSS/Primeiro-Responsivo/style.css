@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: sans-serif;
+}
+.cabecalho{
+    background-color: rgb(38, 53, 34);
+    color: #fff;
+    padding: 20px;
+    position: sticky; /*elemnto fixo*/
+    top: 0; /*distancia do top*/
+    z-index: 10;
+   text-align: center;
+   
+}
+.cabecalho p{
+    margin-top: 10px;
+    color: #98ee8e;
+
+}
+.container{
+    display: grid;
+    gap: 40px 20px;
+    min-height: 100vh;
+    transition: all 0.5s ease;
+    margin: 20px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: #716f37;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: 800;
+    height: 150px;
+    padding: 20px;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+     
+}
+.card:hover{
+    box-shadow: 19px 19px 10px #20202053;
+    height: 155px;
+    transition: 0.6s;
+}
+
+/* =========
+📱 MOBILE = (ate 600px)
+=============*/
+@media(max-width:600px) {
+    body{
+        background-color: rgb(41, 41, 41);
+        
+    }
+    .cabecalho{
+        background-color: #002f3c;
+    }
+    .card{
+        background-color: bisque;
+        color: black;
+    }
+    header h1::after{
+        content: " (Mobile)";
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    header p::after{
+        content: " para Mobile";
+    
+    }
+        
+}
+/* =========
+📱 TABLET = (ate 601 a 1024px)
+=============*/
+@media(min-width:601px) and (max-width:1024px)  {
+    body{
+        background-color: rgb(0, 174, 255);
+        
+    }
+    .cabecalho{
+        background-color: #6c2d2d;
+    }
+    .card{
+        background-color: rgb(116, 80, 36);
+        color: black;
+    
+    } 
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }  
+    header h1::after{
+        content: " ( Tablet )";
+
+
+}
+header p::after{
+    content: " para Tablet";
+
+}
+    
+}
+@media(min-width:1025px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+
+       
+    }  
+    header h1::after{
+        content: " (Desktop)";
+
+}
+header p::after{
+    content: " para Desktop";
+
+}
+    
+}

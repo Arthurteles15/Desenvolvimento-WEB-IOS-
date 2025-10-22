@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de tabela</title>
+<style>
+
+   
+    
+    body{
+        background-color: rgb(56, 66, 66);  
+
+    }
+    body{
+        color: aliceblue;
+    }
+</style>
+</head>
+<body>
+    <h1 style="font-family:Arial, Helvetica, sans-serif ;">Construindo uma tabela</h1>
+    <h2>Tabela simples</h2>
+
+    <!--
+    table = indicador do sistema que estou criando uma tabela
+    etrutura da tabela
+        thead cabecalho da tabela
+            tr, th, td
+        tbody corpo da tabela
+          tr,th,td
+        tfoot rodape da tabela
+          tr,th,td  
+
+    tr = linha da tabela
+    th = titulo da tabela
+    td = dado da tabela
+    -->
+          
+    <table border ="1" width="50%" >
+        <tr>
+             <th>Nome</th>
+             <th>Sobrenome</th>
+             <th>Gosto Musical</th>
+        </tr>
+        <tr>
+            <td>Arthur</td>
+            <td>Teles</td>
+            <td>r&b</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Apolinario</td>
+            <td>Ecletico</td>
+
+        </tr>
+        <tr>
+
+            <td>Ana</td>
+            <td>Rodrigues</td>
+            <td>Pagode</td>
+        </tr>
+
+    </table>
+
+    <h2>Tabela Estruturada</h2>
+   
+        <table  border ="1" width="50%">
+            <caption  style="color: rgb(21, 158, 40);" >Dinheiro na Poupança de 2026</caption>
+
+          <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Valor Guardado</th>
+             </tr>
+          </thead>
+
+           <tbody>
+
+            <tr>
+
+                <td>Janeiro</td>
+                <td  style="color: rgb(12, 143, 30);" >R$100</td>
+                
+            </tr>
+            <tr>
+                <td>Fevefeiro</td>
+                <td  style="color: rgb(12, 143, 30);" >R$100</td>
+
+            </tr>
+            <tr>
+
+                <td>Março</td>
+                <td style="color: rgb(12, 143, 30);" >R$100</td>
+                
+            </tr>
+            <tr>
+
+
+            </tr>
+           </tbody>
+           <tfoot>
+            <tr>
+                <td colspan="2">Dinheiro Atual : R$300<p></td>
+              
+            </tr>
+           </tfoot>
+    </table>
+    <br>
+           
+           <table border ="1" width="50%">
+            <caption>Tabela de Notas</caption>
+              <thead>
+                <tr>
+               
+                    <th>Nome</th>
+                    <th>Html</th>
+                    <th>Css</th>
+                    <th>Java Script</th>
+                    <th>Situação</th>
+                    <th>Media</th>
+    
+    
+                 </tr>
+
+              </thead>
+              <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>Aprovado</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+
+                </tr>
+              </tbody>
+           
+
+
+           </table>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lexend+Exa:wght@100..900&family=Lexend+Giga:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* Determina os valores padrão para todos os elementos do documento */
+* {
+  margin: 0; /* Remove as margens externas padrão dos elementos */
+  padding: 0; /* Remove os espaçamentos internos padrão dos elementos */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo total da largura/altura */
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Estilização do corpo da página */
+body {
+  display: flex; /* Ativa o Flexbox para permitir alinhamentos flexíveis */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente (no eixo X) */
+  align-items: center; /* Centraliza o conteúdo verticalmente (no eixo Y) */
+  min-height: 100vh; /* Faz o body ocupar 100% da altura da tela do navegador */
+
+  background-image: url(./imagens/38995387-ai-gerado-de-madeira-mesa-com-cafe-xicara-vaso-e-flores-dentro-acolhedor-cafeteria-gerado-de-ai-gratis-foto.jpg); /* Define a imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir toda a área visível da tela */
+  background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.container {
+  width: 420px; /* Define a largura fixa da caixa (container) */
+
+  background-color: transparent; /* Deixa o fundo transparente (útil se quiser ver o background da página) */
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Cria uma borda de 2px com cor branca semitransparente (20% de opacidade) */
+
+  border-radius: 10px; /* Arredonda os cantos da caixa */
+
+  color: white; /* Define a cor do texto dentro do container como branca */
+
+  padding: 30px 40px;
+  /* Adiciona espaçamento interno: 30px em cima e embaixo, 40px nas laterais */
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Adiciona uma leve sombra ao redor da caixa para dar profundidade */
+  backdrop-filter: blur(5px);
+}
+/*alterando um h1 dentro de um container*/
+.container h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.caixa-botao {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative; /* muda a posicao do elemento de acordo com a nescessidade*/
+}
+.caixa-botao input {
+    width: 100%; /* Faz o input ocupar 100% da largura do elemento pai (.caixa-botao) */
+    height: 100%; /* Faz o input preencher toda a altura do elemento pai */
+    
+    background-color: transparent; /* Deixa o fundo do input transparente */
+    
+    border: 2px solid; /* Cria uma borda de 2px (cor padrão do texto atual, branca no seu caso) */
+    
+    border-radius: 40px; /* Arredonda bastante os cantos, deixando o input com formato oval */
+    
+    outline: none; /* Remove o contorno padrão quando o campo é selecionado (foco) */
+    
+    color: white; /* Define a cor do texto digitado como branca */
+    
+    padding: 20px 45px 20px 20px; 
+    /* Adiciona espaçamento interno: 
+       - 20px em cima e embaixo
+       - 20px à esquerda (para o texto)
+       - 45px à direita (para deixar espaço, caso adicione um ícone de olho ou botão interno) */
+}
+
+/* Estiliza o texto de dica (placeholder) dentro do input */
+.caixa-botao input::placeholder {
+    color: rgb(194, 193, 193); /* Define o texto do placeholder em um tom de cinza claro */
+}
+.caixa-botao i {
+    position: absolute; 
+    /* Define posição absoluta, permitindo colocar o ícone em um ponto exato dentro da caixa.
+       (Lembrando: o elemento pai deve ter "position: relative" para funcionar corretamente) */
+    
+    right: 20px; 
+    /* Posiciona o ícone a 20px da borda direita do elemento pai (.caixa-botao) */
+    
+    top: 25%; 
+    /* Move o ícone 25% a partir do topo do elemento pai, centralizando verticalmente de forma aproximada */
+    
+    font-size: 25px; 
+    /* Define o tamanho do ícone (geralmente usado com bibliotecas como Font Awesome) */
+}
+.lembrar-senha {
+    display: flex; 
+    /* Ativa o layout Flexbox, permitindo organizar os elementos lado a lado */
+    
+    justify-content: space-between; 
+    /* Distribui o espaço entre os elementos filhos igualmente,
+       deixando um à esquerda (ex: "Lembrar senha") e outro à direita (ex: "Esqueceu a senha?") */
+}
+
+/* Estiliza o input dentro do label (geralmente o checkbox) */
+.lembrar-senha label input {
+    margin-right: 5px; 
+    /* Adiciona um pequeno espaço entre o checkbox e o texto ("Lembrar senha") */
+    
+    accent-color:  rgb(229, 183, 45) ;
+    /* Muda a cor de destaque do checkbox para um tom de azul (funciona nos navegadores modernos) */
+}
+/* ===== LINKS DENTRO DA SEÇÃO "LEMBRAR SENHA" ===== */
+.lembrar-senha a {
+    text-decoration: none; 
+    /* Remove o sublinhado padrão do link */
+
+    color: #fff; 
+    /* Define a cor do texto do link como branca */
+}
+
+.lembrar-senha a:hover {
+    text-decoration: underline; 
+    /* Quando o mouse passa por cima, o link fica sublinhado (efeito visual) */
+}
+
+
+/* ===== BOTÃO DE LOGIN ===== */
+.Login {
+    width: 100%; 
+    /* Faz o botão ocupar toda a largura do container */
+
+    height: 50px; 
+    /* Define a altura do botão */
+
+    background-color: rgb(229, 183, 45); 
+    /* Cor de fundo dourada (destaque visual) */
+
+    border: none; 
+    /* Remove a borda padrão do botão */
+
+    border-radius: 40px; 
+    /* Arredonda bastante os cantos (formato de cápsula) */
+
+    font-size: 1em; 
+    /* Define o tamanho da fonte de forma proporcional */
+
+    color: #303030; 
+    /* Cor do texto em cinza escuro para contraste com o fundo dourado */
+
+    font-weight: 600; 
+    /* Deixa o texto com espessura média (sem ser negrito total) */
+
+    box-sizing: 0 0 10px rgba(0,0,0, .1); 
+    /* ⚠️ Aqui há um erro de digitação: o correto seria "box-shadow" (veja abaixo) */
+    /* box-shadow: 0 0 10px rgba(0,0,0, .1); → adiciona uma leve sombra no botão */
+
+    margin-top: 20px; 
+    /* Cria um espaçamento acima do botão */
+
+    cursor: pointer; 
+    /* Mostra o ponteiro de mão quando o mouse passa sobre o botão */
+}
+
+/* ===== EFEITO HOVER (quando o mouse passa em cima do botão) ===== */
+.Login:hover {
+    background-color: transparent; 
+    /* Deixa o fundo transparente */
+
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    /* Adiciona uma borda branca semitransparente */
+
+    color: rgb(229, 183, 45); 
+    /* Muda a cor do texto para dourado */
+
+    transition: 0.4s; 
+    /* Cria uma transição suave de 0.4 segundos nas mudanças de cor */
+}
+
+
+/* ===== SEÇÃO DE REGISTRO (TEXTO E LINK PARA CADASTRAR-SE) ===== */
+.registro {
+    font-size: 14px; 
+    /* Define um tamanho de fonte menor para o texto */
+
+    text-align: center; 
+    /* Centraliza o texto na horizontal */
+
+    margin: 20px 0 15px; 
+    /* Adiciona espaçamento acima (20px), nenhum nas laterais e 15px abaixo */
+}
+
+/* Estilo do link dentro da seção de registro */
+.registro a {
+    text-decoration: none; 
+    /* Remove o sublinhado do link */
+
+    color: rgb(255, 255, 255); 
+    /* Deixa o texto do link branco */
+}
+
+/* Efeito hover no link de registro */
+.registro a:hover {
+    text-decoration: underline; 
+    /* Sublinha o texto ao passar o mouse (indicação de interação) */
+}
