@@ -1,0 +1,31 @@
+/* colocando a cor de fundo e cor do texto e fonte */
+.caixa{
+    background-color:#272925;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px ;
+    height:  500px;
+}
+
+/*mudando a cor e cor de fundo caixa 1 com rgb */
+.caixa1{
+    background-color: #bbf77e;
+    color: rgb(79, 38, 38);
+    width: 700px ;
+    height:  500px;
+   margin-bottom: 200px;
+   margin-left: 300px;
+   padding: 200px;
+   box-sizing: border-box;
+}
+/*mudando a cor e cor de fundo caixa 2 com rgb, fundo com imagem e mundando a altura e largura da caixa*/
+.caixa2{
+    background-image: url(https://cdn.esbrasil.com.br/wp-content/uploads/2023/06/Fz174kgWAAAMlAE-1.jpg);
+    background-color: rgb(126, 219, 247);
+    background-position: right; /*direcao em que foca na imagem*/
+    background-repeat: no-repeat;
+    background-size: contain;/*background-size: couver;*/
+    color: rgb(255, 255, 255);
+    width: 500px ;
+    height:  700px;
+}

@@ -1,0 +1,34 @@
+.caixa1 {
+  background-color: aquamarine;
+  margin: ;
+  padding: 50px;
+  width: 500px;
+  margin-left: 375px;
+  margin-top: 50px;
+}
+.caixa2 {
+  background-color: aquamarine;
+  margin: ;
+  padding: 50px;
+  width: 500px;
+  margin-left: 375px;
+  margin-top: 70px;
+}
+.caixa3 {
+  background-color: rgb(138, 221, 138);
+  padding: 50px;
+  width: 500px;
+  margin-left: 375px;
+  margin-top: 70px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+}
+nav, a {
+  text-decoration: none;
+  color: blue;
+  text-align: center;
+}

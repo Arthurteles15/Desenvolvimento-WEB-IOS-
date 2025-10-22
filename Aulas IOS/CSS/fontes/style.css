@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+.cabecalho {
+  color: rgb(255, 255, 255);
+  background-color: rgb(89, 89, 89);
+  text-align: center;
+  border-radius: 7px;
+  padding: 30px;
+}
+body {
+  background-color: rgb(133, 133, 133);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-weight: 100;
+}
+.titulo2 {
+  text-align: center;
+  font-weight: 100;
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.conteudo {
+  background-color: rgb(89, 89, 89);
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+}
+p {
+    font-size: 1em;
+}

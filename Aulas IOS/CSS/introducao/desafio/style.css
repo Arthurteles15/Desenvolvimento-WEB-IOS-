@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(177, 177, 177);
+}
+article{
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 70px;
+    
+}
+img{
+    margin-left: 450px;
+    margin-top: 50px;
+    border-radius: 10px;
+   
+}
+h2 , p {
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+
+
+
+    

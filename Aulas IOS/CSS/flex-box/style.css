@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+.contair{
+    
+    display: flex;
+    height: 500px;
+    flex-direction: row;/*define a direcao do eixo principal e transversal*/
+    justify-content: space-between;
+    /*justify-content: center; alinha os iten no centro*/
+    align-items: stretch;
+    
+}
+.item{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(206, 206, 206);
+
+
+}

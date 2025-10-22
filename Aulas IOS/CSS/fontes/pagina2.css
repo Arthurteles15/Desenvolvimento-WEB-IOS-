@@ -1,0 +1,35 @@
+.surpresa{
+    background-color: rgb(133, 133, 133);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+.surpresa > p{
+    display:none     ;
+}
+.surpresa:hover > p {
+    display: inline; 
+   
+
+
+}
+.surpresa:hover{
+    background-color: red;
+
+}
+.imagemvirginia{
+    width: 300px;
+    display: inline;
+}
+
+.imagemana{
+    display: none;
+}
+.imagemvirginia:hover{
+    display: none;
+}
+.imagemana:hover{
+    display: inline;
+    
+}

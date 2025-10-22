@@ -1,0 +1,23 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: green;
+    color: azure;
+    min-width: 100vh;
+}
+/*MOBILE*/
+@media(min-width:320px) and (max-width:768px) {
+    .container{
+        background-color: red;
+        color: beige;
+    }
+}
+@media(min-width: 769px) and (max-width:1024px){
+    .container{
+        background-color: rgb(44, 44, 181);
+        color: rgb(255, 255, 255);
+    }
+}
